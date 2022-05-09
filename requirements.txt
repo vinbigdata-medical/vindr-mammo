@@ -1,0 +1,5 @@
+gdcm==1.1
+matplotlib==3.4.2
+pydicom==2.1.2
+pandas==1.2.4
+scikit-learn==1.0.1

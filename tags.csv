@@ -1,0 +1,47 @@
+DICOM Tag,Decimal,Attribute name,Description
+"(0010, 0040)",1048640,Patient's Sex,Sex of named Patient.
+"(0010, 1010)",1052688,Patient's Age,Age of the Patient.
+"(0010, 1020)",1052704,Patient's Size,"Length or size of the Patient, in meters."
+"(0010, 1030)",1052720,Patient's Weight,"Weight of the Patient, in kilograms"
+"(0028, 0010)",2621456,Rows,Number of rows in the image.
+"(0028, 0011)",2621457,Columns,Number of columns in the image.
+"(0028, 0030)",2621488,Pixel Spacing,"Physical distance in the patient between the center of each pixel, specified by a numeric pair – adjacent row spacing (delimiter) adjacent column spacing, in mm."
+"(0018, 1164)",1577316,Imager Pixel Spacing,"Physical distance measured at the front plane of the Image Receptor housing between the center of each pixel. Specified by a numeric pair – adjacent row spacing (delimiter) adjacent column spacing, in mm."
+"(0028, 0120)",2621728,Pixel Padding Value,Single pixel value or one limit (inclusive) of a range of pixel values used in an image to pad to rectangular format or to signal background that may be suppressed.
+"(0028, 0121)",2621729,Pixel Padding Range Limit,"Pixel value that represents one limit (inclusive) of a range of padding values used together with Pixel Padding Value (0028,0120) as defined above."
+"(0028, 0100)",2621696,Bits Allocated,"Number of bits allocated for each pixel sample. Each sample shall have the same number of bits allocated. Bits Allocated (0028, 0100) shall be either 1, or a multiple of 8."
+"(0028, 0101)",2621697,Bits Stored,Number of bits stored for each pixel sample. Each sample shall have the same number of bits stored.
+"(0028, 0102)",2621698,High Bit,"Most significant bit for pixel sample data. Each sample shall have the same high bit. High Bit (0028,0102) shall be one less than Bits Stored (0028,0101)"
+"(0028, 0103)",2621699,Pixel Representation,Data representation of the pixel samples. Each sample shall have the same pixel representation.
+"(2050, 0020)",542113824,Presentationi LUT Shape,"Specified predefined Presentation LUT transformation. Required of Presentation LUT Sequence (2050,0010) is absent."
+"(0028, 0106)",2621702,Smallest Image Pixel Value,The minimum actual pixel value encountered in this image.
+"(0028, 0107)",2621703,Largest Image Pixel Value,The maximum actual pixel value encountered in this image.
+"(0028, 1050)",2625616,Window Center,Window Center for display.
+"(0028, 1051)",2625617,Window Width,Window Width for display.
+"(0028, 1055)",2625621,Window Center & Width Explanation,Free form explanation of the meaning of the Window Center and Width. Multiple values corresponding to multiple Window Center and Width values.
+"(0028, 1056)",2625622,VOI LUT Function,"Describe a VOI LUT function to apply to the values of Window Center (0028,1050) and Window Width (0028,1051)."
+"(0028, 3010)",2633744,VOI LUT Sequence,"Defines a Sequence of VOI LUTs. One or more items shall be included in this Seuquence. Required of Window Center (0028,1050) is not present. May be present otherwise."
+"(0028, 3002)",2633730,LUT Descriptor,Specifies the format of the LUT Data in this Sequence.
+"(0028, 3003)",2633731,LUT Explanation,Free form text explanation of the meaning of the LUT.
+"(0028, 3006)",2633734,LUT Data,LUT Data in this sequence.
+"(0028, 1052)",2625618,Rescale Intercept,The value b in relationship between stored values (SV) and the output units. Output units = m*SV+b
+"(0028, 1053)",2625619,Rescale Slope,"m in the equation specified in Rescale Intercept (0028,1052)."
+"(0028, 1054)",2625620,Rescale Type,"Specifies the output units of Rescale Slope (0028,1053) and Rescale Intercept(0028,1052)."
+"(7FE0, 0010)",2145386512,Pixel Data,"A data stream of the pixel samples that comprise the Image. Required if Pixel Data Provider URL (0028,7FE0) is not present."
+"(0028, 0004)",2621444,Photometric Interpretation,Specifies the intended interpretation of the pixel data.
+"(0028, 2110)",2629904,Lossy Image Compression,Specifies whether an Image has unbdergone lossy compression (at a point in its lifetime).
+"(0028, 2112)",2629906,Lossy Image Compression Ratio,Describes the approximate lossy compression ratio(s) that have been applied to this image.
+"(0028, 2114)",2629908,Lossy Image Compression Method,A label for the lossy compression method(s) that have been applied to this image.
+"(0028, 0002)",2621442,Samples per Pixel,Number of samples (planes) in this image.
+"(0028, 0008)",2621448,Number of Frames,Number of frames in a Multi-frame Image.
+"(0008, 0018)",524312,SOP Instance UID,Uniquly indentifies the SOP Instance
+"(0020, 000e)",2097166,Series Instance UID,Unique identifier of the Series containing the referenced Instances.
+"(0020, 000d)",2097165,Study Instance UID,Unique identifier of the Study containing the referenced Instances.
+"(0008, 0060)",524384,Modality,Type of equiment that originally acquired the data used to create the images in this Series.
+"(0018, 0015)",1572885,Body Part Examined,Text description of the part of the body examined.
+"(0008, 0068)",524392,Presentation Intent Type,Identifies the intent of the images that are contained within this Series
+"(0008, 0070)",524400,Manufacturer,Manufacturer of the device.
+"(0008, 1090)",528528,Manufacturer’s Model Name,Manufacturer’s model name of the device.
+"(0020, 0060)",2097248,Laterality,"Laterality of (paired) body part examined. Required if the body part examined is a paired structure and Image Laterality (0020,0062) or Frame Laterality (0020,9072) or Measurement Laterality (0024,0113) are not present."
+"(0020, 0062)",2097250,Image Laterality,"Laterality of (possibly paired) body part (as described in Anatomic Region Sequence (0008,2218)) examined."
+"(0018, 5101)",1593601,View Position,Radiographic view of the image relative to the imaging subject’s orientation.
